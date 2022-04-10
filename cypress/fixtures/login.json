@@ -1,0 +1,6 @@
+{
+    "login":".login",
+    "email":"#email",
+    "pass":"#passwd",
+    "submitLogin":"#SubmitLogin > span"
+}

@@ -24,11 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-// My custom commands. Methods to no repeat code
-
-Cypress.Commands.add('search', (value) => {
-    cy.fixture('index').then( (index) => {
-        cy.get(index.searchBox).type(value);
-        cy.get(index.searchBtn).click();
-    })
-});
+/** My custom commands. Methods to no repeat code. Look at them in
+ * cypress/commands/..
+ */

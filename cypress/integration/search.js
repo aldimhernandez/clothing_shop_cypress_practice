@@ -1,6 +1,4 @@
-/** Suitecase
- * Git proyect manager link:https://github.com/aldimhernandez/clothing_shop_cypress_practice/projects/1
- */
+//Suitecase for search page
 
 describe('search elements', () => {
 
@@ -9,16 +7,16 @@ describe('search elements', () => {
     })
 //RE001
     it('RE001: Search for elements with multiple results', () => {
-        cy.search('dress');
-        cy.fixture('searchResults').then((searchResult)=> {
-            cy.get(searchResult.title).should('contain', 'dress');
+        cy.search('dress'); //get search method from commands/search.js
+        cy.fixture('search').then((search)=> {
+            cy.get(search.lighter).should('contain', 'dress');
         })
     })
 //RE002
     it('RE002: Search for elements with no results', () => {
         cy.search('alexa');
-        cy.fixture('searchResults').then((searchResult)=> {
-            cy.get(searchResult.alert).should('contain', 'No results were found for your search');
+        cy.fixture('search').then((search)=> {
+            cy.get(search.alert).should('contain', 'No results were found for your search');
         })
     })
 })
