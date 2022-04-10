@@ -1,0 +1,27 @@
+{
+  "name": "clothing_shop_cypress_practice",
+  "version": "1.0.0",
+  "description": "Clothing store system automated testing practice from Draculinio yt channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldimhernandez/clothing_shop_cypress_practice.git"
+  },
+  "keywords": [
+    "testing",
+    "automation",
+    "cypress"
+  ],
+  "author": "https://github.com/aldimhernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldimhernandez/clothing_shop_cypress_practice/issues"
+  },
+  "homepage": "https://github.com/aldimhernandez/clothing_shop_cypress_practice#readme",
+  "dependencies": {
+    "cypress": "^9.5.3"
+  }
+}
