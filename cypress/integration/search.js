@@ -9,22 +9,14 @@ describe('search elements', () => {
     })
 //RE001
     it('RE001: Search for elements with multiple results', () => {
-        cy.fixture('index').then( (index) => {
-            cy.get(index.searchBox).type('dress');
-            cy.get(index.searchBtn).click();
-        })
-
+        cy.search('dress');
         cy.fixture('searchResults').then((searchResult)=> {
             cy.get(searchResult.title).should('contain', 'dress');
         })
     })
 //RE002
     it('RE002: Search for elements with no results', () => {
-        cy.fixture('index').then( (index) => {
-            cy.get(index.searchBox).type('alexa');
-            cy.get(index.searchBtn).click();
-        })
-
+        cy.search('alexa');
         cy.fixture('searchResults').then((searchResult)=> {
             cy.get(searchResult.alert).should('contain', 'No results were found for your search');
         })
