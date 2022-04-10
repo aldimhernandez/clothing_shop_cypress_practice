@@ -1,5 +1,7 @@
 # clothing_shop_cypress_practice
 #
+Test automation with cypress using application actions (with fixtures and custom commands)
+#
 Clothing store system automated testing practice from Draculinio yt channel: https://www.youtube.com/playlist?list=PLjM3-neCG6qxbI9lGKq2i0Co4kkAPWI0a
 #
 Website being tested in the test project: http://automationpractice.com
